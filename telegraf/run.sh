@@ -15,6 +15,9 @@ agent_debug=$(jq --raw-output ".agent.debug" $CONFIG_PATH)
 agent_quiet=$(jq --raw-output ".agent.quiet" $CONFIG_PATH)
 
 outputs_influxdb_database=$(jq --raw-output ".outputs.influxdb_database" $CONFIG_PATH)
+outputs_influxdb_username=$(jq --raw-output ".outputs.influxdb_usernmae" $CONFIG_PATH)
+outputs_influxdb_password=$(jq --raw-output ".outputs.influxdb_password" $CONFIG_PATH)
+outputs_influxdb_retention_policy=$(jq --raw-output ".outputs.influxdb_retention_policy" $CONFIG_PATH)
 outputs_influxdb_precision=$(jq --raw-output ".outputs.influxdb_precision" $CONFIG_PATH)
 outputs_influxdb_timeout=$(jq --raw-output ".outputs.influxdb_timeout" $CONFIG_PATH)
 outputs_influxdb_urls=$(jq --raw-output ".outputs.influxdb_urls | length" $CONFIG_PATH)
@@ -123,10 +126,10 @@ configuration="
 # Get kernel statistics from linux_sysctl_fs
 [[inputs.linux_sysctl_fs]]
 
-[[inputs.docker]]
-  endpoint = \"unix:///var/run/docker.sock\"
-  container_names = []
-  timeout = \"5s\"
+#[[inputs.docker]]
+#  endpoint = \"unix:///var/run/docker.sock\"
+#  container_names = []
+#  timeout = \"5s\"
 
 # Collect statistics about itself
 [[inputs.internal]]

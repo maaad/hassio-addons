@@ -7,7 +7,6 @@
   "startup": "system",
   "boot": "auto",
   "arch": [
-    "armel",
     "amd64",
     "armhf",
     "arm64",

@@ -1,6 +1,22 @@
-hassio-addons
+# hassio-addons
 
-Repository for hass.io addons.
+## About
 
-## [Telegraf](https://github.com/maaad/hassio-addons/telegraf)
-The plugin-driven server agent for collecting & reporting metrics.
+Hass.io allows anyone to create add-on repositories to share their add-ons for
+Hass.io easily. This repository is one of those repositories.
+
+## Installation
+
+Adding this add-ons repository to your Hass.io Home Assistant instance is
+pretty easy. Follow https://home-assistant.io/hassio/installing_third_party_addons/ on the
+website of Home Assistant, and use the following URL:
+
+```txt
+https://github.com/maaad/hassio-addons/
+```
+
+## Add-ons provided by this repository
+
+### [telegraf]
+
+Simple addon for the plugin-driven server agent for collecting & reporting metrics to InfluxDB.

@@ -9,7 +9,6 @@
   "arch": [
     "amd64",
     "armhf",
-    "arm64",
     "armv7"
   ],
   "ports": {

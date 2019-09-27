@@ -16,7 +16,6 @@ COPY telegraf.conf /etc/telegraf/
 RUN chmod a+x /run.sh
 
 COPY entrypoint.sh /entrypoint.sh
-RUN chmod a+x /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["sh", "/entrypoint.sh"]
 
 CMD [ "/run.sh" ]

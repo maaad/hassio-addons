@@ -1,6 +1,6 @@
 {
   "name": "Telegraph",
-  "version": "1.12.2-4",
+  "version": "1.12.2-5",
   "slug": "telegraf",
   "description": "The plugin-driven server agent for collecting & reporting metrics.",
   "url": "https://hub.docker.com/_/telegraf/",

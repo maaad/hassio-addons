@@ -34,7 +34,10 @@
     "outputs": {
       "influxdb_urls": ["http://a0d7b954-influxdb:8086"],
       "influxdb_database": "telegraf",
+      "influxdb_username": "telegraf",
+      "influxdb_password": "telegraf",
       "influxdb_precision": "s",
+      "influxdb_retention_policy": "day",
       "influxdb_timeout": "5s"
     },
     "inputs": {
@@ -57,7 +60,10 @@
     "outputs": {
       "influxdb_urls": ["str"],
       "influxdb_database": "str",
+      "influxdb_username": "str",
+      "influxdb_password": "str",
       "influxdb_precision": "str",
+      "influxdb_retention_policy": "str",
       "influxdb_timeout": "str"
     },
     "inputs": {

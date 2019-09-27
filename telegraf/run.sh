@@ -75,6 +75,9 @@ configuration="
   database = \"$outputs_influxdb_database\" # required
   precision = \"$outputs_influxdb_precision\"
   timeout = \"$outputs_influxdb_timeout\"
+  username = \"$outputs_influxdb_username\"
+  password = \"$outputs_influxdb_password\"
+  retention_policy = \"$outputs_influxdb_retention_policy\"
 
 
 ###############################################################################
@@ -119,6 +122,11 @@ configuration="
 
 # Get kernel statistics from linux_sysctl_fs
 [[inputs.linux_sysctl_fs]]
+
+[[inputs.docker]]
+  endpoint = \"unix:///var/run/docker.sock\"
+  container_names = []
+  timeout = \"5s\"
 
 # Collect statistics about itself
 [[inputs.internal]]

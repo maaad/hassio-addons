@@ -1,6 +1,6 @@
 {
   "name": "InfluxDB",
-  "version": "dev-5",
+  "version": "dev-6",
   "slug": "influxdb",
   "description": "Scalable datastore for metrics, events, and real-time analytics",
   "url": "https://github.com/hassio-addons/addon-influxdb",
@@ -23,13 +23,11 @@
   "boot": "auto",
   "ports": {
     "80/tcp": null,
-    "8086/tcp": 8086,
-    "25826/udp": 25826
+    "8086/tcp": 8086
   },
   "ports_description": {
     "80/tcp": "Web interface (Not required for Hass.io Ingress)",
-    "8086/tcp": "InfluxDB server",
-    "25826/udp": "Collectd server"
+    "8086/tcp": "InfluxDB server"
   },
   "hassio_api": true,
   "auth_api": true,

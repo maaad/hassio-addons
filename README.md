@@ -16,7 +16,3 @@ https://github.com/maaad/hassio-addons/
 ```
 
 ## Add-ons provided by this repository
-
-### [telegraf]
-
-Simple addon for the plugin-driven server agent for collecting & reporting metrics to InfluxDB.

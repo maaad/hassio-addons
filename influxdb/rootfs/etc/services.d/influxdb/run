@@ -1,9 +1,0 @@
-#!/usr/bin/with-contenv bashio
-# ==============================================================================
-# Community Hass.io Add-ons: InfluxDB
-# Runs the InfluxDB Server
-# ==============================================================================
-bashio::log.info 'Starting the InfluxDB...'
-
-# Run InfluxDB
-exec influxd

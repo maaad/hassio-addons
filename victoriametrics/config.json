@@ -5,8 +5,9 @@
   "stage": "experimental",
   "description": "Local Victoria Metrics TSDB",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
-  "startup": "application",
+  "startup": "services",
   "boot": "auto",
+  "map": ["config:rw"],
   "ingress": true,
   "ingress_port": 8428,
   "options": {

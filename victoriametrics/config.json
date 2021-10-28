@@ -7,9 +7,6 @@
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "boot": "auto",
-#  "ingress": true,
-#  "ingress_port": 8428,
-  "host_network": false,
   "options": {
     "retention": "3"
   },

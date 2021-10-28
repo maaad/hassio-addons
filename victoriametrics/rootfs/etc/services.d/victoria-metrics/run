@@ -2,4 +2,4 @@
 # ==============================================================================
 # Run the Victoria Metrics
 # ==============================================================================
-exec /victoria-metrics-prod --influxListenAddr=:8089 --httpListenAddr=:8428 -storageDataPath=/data -retentionPeriod="${retention}"
+exec /victoria-metrics-prod --influxListenAddr=:8089 --httpListenAddr=:8428 -storageDataPath=/data -retentionPeriod="$(bashio::services 'retention')"

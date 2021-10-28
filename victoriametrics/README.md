@@ -1,1 +1,1 @@
-# Victoria Metrics for Raspi
+# Victoria Metrics as hassio-addon 

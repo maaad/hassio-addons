@@ -19,6 +19,5 @@
   "webui": "http://[HOST]:[PORT:8428]/",
   "ports": {
     "8428/tcp": 8428,
-    "8086/tcp": null
   }
 }

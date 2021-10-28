@@ -15,7 +15,7 @@ RUN \
     && if [ "${BUILD_ARCH}" = "aarch64" ]; then ARCH="arm64"; fi \
     && if [ "${BUILD_ARCH}" = "armv7" ]; then ARCH="armhf"; fi \
     \
-    && curl -fL https://github.com/VictoriaMetrics/VictoriaMetrics/releases/download/$VICTORIAMETRICS_VERSION/victoria-metrics-{$ARCH}-v${VICTORIAMETRICS_VERSION}.tar.gz -o victoria-metrics.tar.gz \
+    && curl -fL https://github.com/VictoriaMetrics/VictoriaMetriccs/releases/download/v$VICTORIAMETRICS_VERSION/victoria-metrics-$ARCH-v$VICTORIAMETRICS_VERSION.tar.gz -o victoria-metrics.tar.gz \
     && tar -xzf victoria-metrics.tar.gz -C /usr/local/bin
 
 # Copy root filesystem

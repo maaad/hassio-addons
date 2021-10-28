@@ -1,15 +1,15 @@
 {
   "name": "Victoria Metrics",
-  "version": "1.68.0",
+  "version": "1.68.0.1,
   "slug": "victoria_metrics",
   "stage": "experimental",
-  "description": "Local Victoria Metrics TSDB as replacement for Prometheus or InfluxDB",
+  "description": "Local Victoria Metrics TSDB",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "application",
   "boot": "auto",
-  "ingress": true,
-  "ingress_port": 8428,
-  "host_network": true,
+#  "ingress": true,
+#  "ingress_port": 8428,
+  "host_network": false,
   "options": {
     "retention": "3"
   },

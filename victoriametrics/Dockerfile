@@ -9,13 +9,13 @@ ENV LANG C.UTF-8
 # Setup base system
 ARG BUILD_ARCH=amd64
 RUN \
-    VICTORIAMETRICS_VERSION="1.68.0" \
+    VICTORIAMETRICS_VERSION="v1.68.0" \
     \
     && ARCH="${BUILD_ARCH}" \
     && if [ "${BUILD_ARCH}" = "aarch64" ]; then ARCH="arm64"; fi \
     && if [ "${BUILD_ARCH}" = "armv7" ]; then ARCH="armhf"; fi \
     \
-    && curl -fL https://github.com/VictoriaMetrics/VictoriaMetriccs/releases/download/v$VICTORIAMETRICS_VERSION/victoria-metrics-$ARCH-v$VICTORIAMETRICS_VERSION.tar.gz -o victoria-metrics.tar.gz \
+    && curl -fL https://github.com/VictoriaMetrics/VictoriaMetriccs/releases/download/${VICTORIAMETRICS_VERSION}/victoria-metrics-${ARCH}-${VICTORIAMETRICS_VERSION}.tar.gz -o victoria-metrics.tar.gz \
     && tar -xzf victoria-metrics.tar.gz -C /usr/local/bin
 
 # Copy root filesystem

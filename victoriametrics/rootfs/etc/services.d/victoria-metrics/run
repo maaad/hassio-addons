@@ -2,4 +2,4 @@
 # ==============================================================================
 # Run the Victoria Metrics
 # ==============================================================================
-exec victoria-metrics-prod --influxListenAddr=:8089 --httpListenAddr=:8428 -storageDataPath=/data -retentionPeriod="$(bashio::config 'retention')" -promscrape.config=/config/victoria-metrics/prometheus.yml
+exec victoria-metrics-prod --influxListenAddr=:8086 --httpListenAddr=:8428 -storageDataPath=/data -retentionPeriod="$(bashio::config 'retention')" -promscrape.config=/config/victoria-metrics/prometheus.yml

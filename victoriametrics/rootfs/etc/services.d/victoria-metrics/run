@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Run the Victoria Metrics
+# ==============================================================================
+exec /victoria-metrics-prod --influxListenAddr=:8089 --httpListenAddr=:8428 -storageDataPath=/data -retentionPeriod="${retention}"

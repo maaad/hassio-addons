@@ -5,7 +5,6 @@ FROM ${BUILD_FROM}
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 ENV LANG C.UTF-8
-ENV DOCKER_HOSTNAME=${DOCKER_HOSTNAME:-victoria-metrics}
 
 # Setup base system
 ARG BUILD_ARCH=amd64

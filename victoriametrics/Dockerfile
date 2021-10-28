@@ -15,10 +15,8 @@ RUN \
     && if [ "${BUILD_ARCH}" = "aarch64" ]; then ARCH="arm64"; fi \
     && if [ "${BUILD_ARCH}" = "armv7" ]; then ARCH="armhf"; fi \
     \
-    && curl -J -L -o /tmp/grafana.deb \
-        "https://dl.grafana.com/oss/release/grafana_${GRAFANA}_${ARCH}.deb" \
-        curl -fL https://github.com/VictoriaMetrics/VictoriaMetrics/releases/download/$VICTORIAMETRICS_VERSION/victoria-metrics-{$ARCH}-v${VICTORIAMETRICS_VERSION}.tar.gz -o victoria-metrics.tar.gz
-RUN tar -xzf victoria-metrics.tar.gz -C /usr/local/bin
+    && curl -fL https://github.com/VictoriaMetrics/VictoriaMetrics/releases/download/$VICTORIAMETRICS_VERSION/victoria-metrics-{$ARCH}-v${VICTORIAMETRICS_VERSION}.tar.gz -o victoria-metrics.tar.gz \
+    && tar -xzf victoria-metrics.tar.gz -C /usr/local/bin
 
 # Copy root filesystem
 COPY rootfs /

@@ -16,6 +16,7 @@ RUN \
     && if [ "${BUILD_ARCH}" = "armv7" ]; then ARCH="armhf"; fi \
     \
     && echo "nameserver 1.1.1.1" > /etc/resolv.conf \
+    && echo "victoria_metrics" > /etc/hostname \
     && curl -fL https://github.com/VictoriaMetrics/VictoriaMetrics/releases/download/${VICTORIAMETRICS_VERSION}/victoria-metrics-${ARCH}-${VICTORIAMETRICS_VERSION}.tar.gz -o victoria-metrics.tar.gz \ 
     && tar -xzf victoria-metrics.tar.gz -C /usr/local/bin
 

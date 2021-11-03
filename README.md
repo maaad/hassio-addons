@@ -16,3 +16,4 @@ https://github.com/maaad/hassio-addons/
 ```
 
 ## Add-ons provided by this repository
+# [VictoriaMetrics](https://github.com/maaad/hassio-addons/tree/master/victoriametrics)

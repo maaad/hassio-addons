@@ -1,6 +1,6 @@
 {
   "name": "Victoria Metrics",
-  "version": "dev",
+  "version": "1.69.0",
   "slug": "victoria_metrics",
   "stage": "experimental",
   "description": "Local Victoria Metrics TSDB",
@@ -11,7 +11,7 @@
   "ingress": true,
   "ingress_port": 8428,
   "options": {
-    "retention": "3"
+    "retention": "6"
   },
   "schema": {
     "retention": "str"

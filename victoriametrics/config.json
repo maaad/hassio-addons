@@ -1,6 +1,6 @@
 {
   "name": "Victoria Metrics",
-  "version": "1.77.2.1",
+  "version": "1.77.2.2",
   "slug": "victoria_metrics",
   "stage": "experimental",
   "description": "Local Victoria Metrics TSDB",

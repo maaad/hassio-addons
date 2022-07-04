@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:5.3.1
+ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:6.0.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -9,7 +9,7 @@ ENV LANG C.UTF-8
 # Setup base system
 ARG BUILD_ARCH=amd64
 RUN \
-    VICTORIAMETRICS_VERSION="v1.77.2" \
+    VICTORIAMETRICS_VERSION="v1.78.0" \
     \
     && ARCH="${BUILD_ARCH}" \
     && if [ "${BUILD_ARCH}" = "aarch64" ]; then ARCH="arm64"; fi \

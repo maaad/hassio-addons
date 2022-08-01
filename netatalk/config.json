@@ -1,13 +1,13 @@
 {
   "name": "Apple Filing Protocol (netatalk)",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Serve the supervisor's shares as AFP.",
   "url": "https://github.com/marcelveldt/hassio-addons-repo/netatalk",
   "slug": "netatalk",
   "stage": "experimental",
   "startup": "application",
   "boot": "auto",
-  "host_pid": "true",
+  "init": "false",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "environment": {},
   "ports": {

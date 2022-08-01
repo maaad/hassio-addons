@@ -1,0 +1,2 @@
+#!/usr/bin/with-contenv bashio
+exec netatalk -F /etc/afp.conf -d

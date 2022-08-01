@@ -9,7 +9,9 @@ ENV LANG C.UTF-8
 # Setup base system
 ARG BUILD_ARCH=amd64
 
-RUN apk add netatalk 
+RUN apk add netatalk avahi
+RUN sed -i 's/#enable-dbus=yes/enable-dbus=no/g' /etc/avahi/avahi-daemon.conf
+
 
 # Copy root filesystem
 COPY rootfs /

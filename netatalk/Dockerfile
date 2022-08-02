@@ -9,7 +9,11 @@ ENV LANG C.UTF-8
 # Setup base system
 ARG BUILD_ARCH=amd64
 
-RUN apk add netatalk avahi
+RUN echo "https://dl-cdn.alpinelinux.org/alpine/v3.12/main" > /etc/apk/repositories
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/3.12/community" >> /etc/apk/repositories
+
+RUN apk update \
+&& apk --no-cache --update add netatalk avahi
 RUN sed -i 's/#enable-dbus=yes/enable-dbus=no/g' /etc/avahi/avahi-daemon.conf
 
 

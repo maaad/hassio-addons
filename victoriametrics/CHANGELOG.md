@@ -1,2 +1,2 @@
-# 1.79.1 
-https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.79.1
+# 1.80.0
+https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.80.0

@@ -9,7 +9,7 @@ ENV LANG C.UTF-8
 # Setup base system
 ARG BUILD_ARCH=amd64
 RUN \
-    VICTORIAMETRICS_VERSION="v1.79.1" \
+    VICTORIAMETRICS_VERSION="v1.80.0" \
     \
     && ARCH="${BUILD_ARCH}" \
     && if [ "${BUILD_ARCH}" = "aarch64" ]; then ARCH="arm64"; fi \

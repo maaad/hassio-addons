@@ -1,2 +1,2 @@
-# 1.81.1
-https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.81.1
+# 1.81.2
+https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.81.2
